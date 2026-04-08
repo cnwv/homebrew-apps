@@ -5,21 +5,21 @@
 class Jirka < Formula
   desc "TUI dashboard for Jira tickets"
   homepage "https://github.com/cnwv/jirka"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cnwv/jirka/releases/download/v0.1.0/jirka_0.1.0_darwin_amd64.tar.gz"
-      sha256 "dce2f377d4bf280389405aa0bdd2089bef6acec96076b78dadb58f7320760be8"
+      url "https://github.com/cnwv/jirka/releases/download/v0.2.0/jirka_0.2.0_darwin_amd64.tar.gz"
+      sha256 "91687896bf22c8c524f455edb02b3ac148b1279962b43a7947d7f962b1af7fc6"
 
       define_method(:install) do
         bin.install "jirka"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cnwv/jirka/releases/download/v0.1.0/jirka_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f2b82ef176cf082bc4102071f00ee6ce83e4a07eaf786758d74be8fae4431792"
+      url "https://github.com/cnwv/jirka/releases/download/v0.2.0/jirka_0.2.0_darwin_arm64.tar.gz"
+      sha256 "cbb31388a93148e6b7f01f711f04dc606cac08fe9fbf16bb56a6bda53db2cddb"
 
       define_method(:install) do
         bin.install "jirka"
@@ -29,15 +29,15 @@ class Jirka < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cnwv/jirka/releases/download/v0.1.0/jirka_0.1.0_linux_amd64.tar.gz"
-      sha256 "9ea4bcc78823b4c032e369b9790408ebe6e0d248c286ef0e7a5e4ca75d74795f"
+      url "https://github.com/cnwv/jirka/releases/download/v0.2.0/jirka_0.2.0_linux_amd64.tar.gz"
+      sha256 "4968a42fe7082fd271f976b07ae23ce5c9a271c0df57d298af53673e8b135d0e"
       define_method(:install) do
         bin.install "jirka"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cnwv/jirka/releases/download/v0.1.0/jirka_0.1.0_linux_arm64.tar.gz"
-      sha256 "cbaaa7a14acf5ed781d77ffc5b3c4e73f65a6db4904a727c501c9f5ab492e7d6"
+      url "https://github.com/cnwv/jirka/releases/download/v0.2.0/jirka_0.2.0_linux_arm64.tar.gz"
+      sha256 "82a44901e6f29d40b6e2a9c8734484d9f991f9246b9c352ad3856ff602900c48"
       define_method(:install) do
         bin.install "jirka"
       end
